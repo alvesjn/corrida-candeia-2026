@@ -243,3 +243,24 @@ iframe {
         padding: 0 15px; /* Evita que o texto encoste nas bordas físicas do celular */
     }
 }
+
+/* --- Regras exclusivas para Celular (acrescente isto) --- */
+@media (max-width: 768px) {
+    /* ... (seus códigos anteriores aqui, como .header-content, .logo...) ... */
+
+    .info-block {
+        flex-direction: column !important; /* Já tínhamos isso para empilhar */
+        text-align: center;
+    }
+
+    /* 👇 ACRESCENTE ESTA PARTE ABAIXO 👇 */
+    .info-visual {
+        margin-bottom: 25px; /* Cria um espaço de 25px EMBAIXO da imagem/kit */
+        width: 100%; /* Garante que o contêiner ocupe a largura toda */
+    }
+
+    .img-details {
+        max-width: 100%; /* Mantém a imagem flexível */
+        height: auto;
+    }
+}
