@@ -255,7 +255,7 @@ iframe {
 
     /* 👇 ACRESCENTE ESTA PARTE ABAIXO 👇 */
     .info-visual {
-        margin-bottom: 25px; /* Cria um espaço de 25px EMBAIXO da imagem/kit */
+        margin-bottom: 40px; /* Cria um espaço de 25px EMBAIXO da imagem/kit */
         width: 100%; /* Garante que o contêiner ocupe a largura toda */
     }
 
