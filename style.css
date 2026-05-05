@@ -223,44 +223,30 @@ iframe {
 
 /* O restante do @media (max-width: 768px) continua igual */
 
-/* Regras exclusivas para Celular (telas menores que 768px) */
+/* --- Ajuste Definitivo para Celular --- */
 @media (max-width: 768px) {
-    .header-content, 
-    .info-block {
-        flex-direction: column !important; /* Empilha os itens verticalmente */
-        text-align: center;
+    /* Adiciona espaço entre TODAS as seções no celular */
+    section {
+        padding: 40px 20px !important; 
+        margin-bottom: 20px;
     }
-
-    .logo {
-        height: 100px; /* Reduz um pouco a logo no celular */
-    }
-
-    .hero h1 {
-        font-size: 2.2rem; /* Título menor para caber na largura do celular */
-    }
-
-    .container {
-        padding: 0 15px; /* Evita que o texto encoste nas bordas físicas do celular */
-    }
-}
-
-/* --- Regras exclusivas para Celular (acrescente isto) --- */
-@media (max-width: 768px) {
-    /* ... (seus códigos anteriores aqui, como .header-content, .logo...) ... */
 
     .info-block {
-        flex-direction: column !important; /* Já tínhamos isso para empilhar */
-        text-align: center;
-    }
-
-    /* 👇 ACRESCENTE ESTA PARTE ABAIXO 👇 */
-    .info-visual {
-        margin-bottom: 40px; /* Cria um espaço de 25px EMBAIXO da imagem/kit */
-        width: 100%; /* Garante que o contêiner ocupe a largura toda */
+        flex-direction: column !important;
+        display: flex;
+        gap: 30px; /* Cria o espaço entre a imagem e o texto automaticamente */
     }
 
     .img-details {
-        max-width: 100%; /* Mantém a imagem flexível */
+        width: 100% !important;
+        max-width: 100%;
         height: auto;
+        display: block;
+        margin: 0 auto 20px auto; /* Centraliza e empurra o que vem abaixo */
+    }
+
+    /* Ajuste para o texto não ficar colado na imagem */
+    .info-text {
+        padding-top: 10px;
     }
 }
